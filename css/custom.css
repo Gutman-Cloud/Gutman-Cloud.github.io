@@ -1,0 +1,445 @@
+/*
+
+Template: Sofbox - Responsive Software Landing Page
+Author: iqonicthemes.in
+Version: 3.0
+Design and Developed by: iqonicthemes.in
+
+NOTE: This is main stylesheet of template, This file contains the styling for the actual Template. Please do not change anything here! write in a custom.css file if required!
+
+*/
+
+header {
+  padding: 0;
+}
+
+header .navbar {
+  justify-content: space-between;
+}
+
+.navbar-nav {
+  justify-content: center!important;
+}
+
+.navbar-collapse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+@media (max-width: 1170px) {
+  header .navbar .navbar-nav .nav-item a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 993px) {
+  .navbar-collapse {
+    position: static;
+    transform: none;
+  }
+}
+
+#main-header .container {
+  width: 95%;
+  max-width: 95%;
+}
+
+.header__button {
+  font-size: 14px;
+  padding: 10px 20px;
+  margin-left: 0;
+}
+
+.iq-over-black-10:before {
+  background: rgba(0, 0, 0, 0.47);
+}
+
+.first {
+  background: url(../images/new/first.jpg) no-repeat center center / cover;
+}
+
+.first__title {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.iq-banner-07 .banner-text {
+  margin-top: 15%;
+}
+
+.first__subtitle {
+  color: #fff;
+}
+
+.logo {
+  margin-top: 7px;
+}
+
+.section__title {
+  position: relative;
+  text-align: center;
+  padding-bottom: 30px;
+  margin-bottom: 50px!important;
+}
+
+.section__title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  border-radius: 4px;
+  left: 50%;
+  margin-left: -40px;
+  width: 80px;
+  height: 4px;
+  background: #4ac4f3;
+}
+
+/* About */
+.about__image {
+  position: relative;
+  z-index: -1;
+  box-shadow: none!important;
+  margin-top: -30px;
+}
+
+.life-work__title {
+  text-align: center;
+}
+
+.how {
+  padding-top: 30px;
+  padding-bottom: 0;
+}
+
+.how__title {
+  margin-bottom: 60px;
+}
+
+.how__title .section__title {
+  margin-bottom: 20px!important;
+}
+
+.how__desc {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.how-works {
+  padding-bottom: 50px;
+}
+
+.how__list {
+  display: flex;
+  /*flex-wrap: wrap;*/
+  counter-reset: section;
+}
+
+.how__list-item {
+  position: relative;
+  flex-basis: 25%;
+  max-width: 25%;
+  margin-bottom: 30px;
+  text-align: left;
+  padding-right: 3%;
+  line-height: 1.6;
+  color: #000;
+  font-size: 14px;
+}
+
+.how__list-item::before {
+  counter-increment: section;
+  content: counter(section);
+  position: absolute;
+  top: -30px;
+  left: -25px;
+  z-index: -1;
+  font-size: 60px;
+  font-weight: 900;
+  color: #efefef;
+  line-height: 1.2;
+}
+
+.features {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feature {
+  flex-basis: 33.33%;
+  max-width: 33.33%;
+  margin-bottom: 40px!important;
+  padding-left: 4%;
+}
+
+.apply {
+  padding-top: 30px;
+}
+
+.apply__subtitle {
+  font-size: 24px;
+  margin-bottom: 50px;
+  color: #000;
+  font-weight: 700;
+  text-align: center;
+}
+
+.apply__section {
+  padding-top: 30px!important;
+  padding-bottom: 0 !important;
+}
+
+.apply__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.apply__item {
+  flex-basis: 25%;
+  max-width: 25%;
+
+  display: flex;
+  margin-bottom: 50px;
+  font-size: 15px;
+  padding-right: 2%;
+}
+
+.apply__item .feature__icon {
+  margin-right: 10px;
+}
+
+.apply__item.-large {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+.examples__list {
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+}
+
+.contacts__offer {
+  margin: 0 auto;
+}
+
+.examples {
+  padding-top: 30px;
+}
+
+.example {
+  flex-basis: 33.33%;
+  max-width: 33.33%;
+  padding-right: 5%;
+}
+
+.example__title {
+  margin-bottom: 25px;
+  position: relative;
+  font-size: 22px;
+  font-weight: 700;
+  min-height: 70px;
+}
+
+.examples__list {
+  text-align: left;
+}
+
+.example__title em {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  font-size: 52px;
+  font-weight: 700;
+  font-style: normal;
+  opacity: .2;
+}
+
+.example__block {
+  margin-bottom: 30px;
+}
+
+.example__subtitle {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.example li {
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.example li::before {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 5px;
+  min-width: 5px;
+  margin-top: 10px;
+  margin-right: 5px;
+  background: #000;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.feature__icon {
+  display: block;
+  width: 40px;
+  min-width: 40px;
+  margin-right: 15px;
+}
+
+.feature__icon img {
+  width: 100%;
+}
+
+/* Form */
+.input {
+  display: block;
+}
+
+.form__submit {
+  margin-top: 20px;
+}
+
+/* Popup */
+.popup {
+  position: relative;
+  width: 600px;
+  margin: 0 auto;
+  padding: 60px 20px 100px;
+  background: #fff;
+  text-align: center;
+}
+
+.mfp-close-btn-in .mfp-close {
+  font-size: 40px;
+}
+
+.popup .form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.popup h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.top svg {
+  width: 55%;
+  fill: #fff;
+}
+
+@media (max-width: 920px) {
+  .how__list {
+    flex-wrap: wrap;
+  }
+
+  .how__list-item {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .iq-banner .banner-text h1, .iq-banner-07 .banner-text h1, .iq-banner-08 .banner-text h1, .first__subtitle, .life-work-1 h2 {
+    text-align: center;
+  }
+
+  .problems img {
+    width: 100%;
+  }
+
+  .problems__text {
+    text-align: center;
+  }
+
+  .popup {
+    width: 100%;
+  }
+
+  .first {
+    padding-top: 150px;
+  }
+
+  .how__list-item {
+    flex-basis: 80%;
+    max-width: 80%;
+    margin: 0 auto 30px;
+  }
+
+  .how-works {
+    text-align: center;
+    padding-bottom: 0;
+  }
+
+  .apply__item {
+    display: block;
+  }
+
+  .apply__item .feature__icon {
+    margin: 0 auto 10px;
+  }
+
+  .apply__subtitle {
+    font-size: 15px;
+  }
+
+  .feature {
+    flex-basis: 80%;
+    max-width: 80%;
+    margin: 0 auto 30px;
+
+    padding-right: 4%;
+    padding-left: 0;
+  }
+
+  .feature__icon {
+    margin: 0 auto 10px;
+  }
+
+  .first__action {
+    text-align: center;
+  }
+
+  .example {
+    flex-basis: 80%;
+    max-width: 80%;
+    margin: 0 auto 30px;
+  }
+
+  .example__title {
+    height: auto;
+    min-height: 0;
+  }
+
+  .apply__item {
+    flex-basis: 80%;
+    max-width: 80%;
+    margin: 0 auto 30px;
+    padding-right: 0;
+  }
+
+  .apply__item.-large {
+    flex-basis: 80%;
+    max-width: 80%;
+    margin: 0 auto 30px;
+  }
+
+  .footer {
+    padding-top: 40px;
+  }
+}
